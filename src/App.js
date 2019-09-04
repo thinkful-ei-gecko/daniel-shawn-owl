@@ -1,7 +1,8 @@
 import React from 'react';
-import ChatEvents from './ChatEvents';
 import ParticipantsList from './ParticipantsList';
-
+import Stage from './Stage.js'
+import Chat from './Chat'
+import ChatEvents from './ChatEvents'
 
 
 function App(props) {
@@ -12,6 +13,12 @@ function App(props) {
         <div className="Owl-app">
             <ParticipantsList Participants={props.Participants}></ParticipantsList>
         </div> 
+        <div className="Stage">
+            <Stage Participants={props.Participants}></Stage>
+        </div>
+        <div className="Chat">
+            <Chat ChatEvents={props.ChatEvents} Participants={props.Participants}></Chat>
+        </div>
 
     </main>);
 }

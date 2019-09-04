@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Participant.css';
 
 
@@ -13,6 +12,7 @@ function Participant(props) {
                 <span>on stage - </span> 
                 <a href="">Boot</a> 
             </li>
+            <li>{props.inSession}</li> 
         </ul>
      </div>)
 }
