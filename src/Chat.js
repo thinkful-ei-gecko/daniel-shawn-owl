@@ -2,27 +2,26 @@ import React from 'react';
 import Message from './Message';
 
 
+
 function Chat(props) {
-  const messages = props.ChatEvents.map(message => {
-    const participant = props.Participants.find(p => message.participantId === p.id);
-    message.participantName = participant.name;
-    message.avatar = participant.avatar;
-    return message;
+  //Participants & ChatEvents unified so each chat even has all information required to be rendered as message
+  const updatedChatEvents = props.ChatEvents.map(chatEvent => {
+    const participant = props.Participants.find(p => chatEvent.participantId === p.id);
+    chatEvent.participantName = participant.name;
+    chatEvent.avatar = participant.avatar;
+    chatEvent.time = new Date(chatEvent.timestamp)
+    chatEvent.displayMinutes = chatEvent.time.getMinutes()
+    chatEvent.displayHours = chatEvent.time.getHours();
+    return chatEvent;
   });
 
-  messages.forEach(message => {
-    message.time = new Date(message.timestamp)
-    message.displayMinutes = message.time.getMinutes()
-    message.displayHours = message.time.getHours();
-  });
 
+  //map touple: chatEvent = element, i = index 
+  //we use the index as the key so React doesn't throw a warning
+  //not best practice as an ID will always be unique, indexes are only unique until you rerender or reorder, then things can break.
   return( <div className="ParticipantList">
-  {messages.map(message => (
-      <Message
-      key={message.id} 
-      name={message.name}
-      avatar={message.avatar}
-      />
+  {updatedChatEvents.map((chatEvent, i) => (
+      <Message key={i} chatEvent={chatEvent}/>
   ))}
   </div>)
 }
