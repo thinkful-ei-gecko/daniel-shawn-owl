@@ -6,7 +6,7 @@ function Stage(props) {
   const onStage = props.Participants.filter(person => person.onStage === true);
 
   return (
-    <div className="Stage">
+    <div className="onStage">
       {onStage.map(person => (
         <Staged 
           key = {person.id}

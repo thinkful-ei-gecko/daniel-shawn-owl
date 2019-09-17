@@ -15,12 +15,14 @@ function Chat(props) {
     return chatEvent;
   });
 
+    console.log(updatedChatEvents)
 
   //map touple: chatEvent = element, i = index 
   //we use the index as the key so React doesn't throw a warning
   //not best practice as an ID will always be unique, indexes are only unique until you rerender or reorder, then things can break.
-  return( <div className="ParticipantList">
-  {updatedChatEvents.map((chatEvent, i) => (
+  return( 
+    <div className="ParticipantList">
+      {updatedChatEvents.map((chatEvent, i) => (
       <Message key={i} chatEvent={chatEvent}/>
   ))}
   </div>)

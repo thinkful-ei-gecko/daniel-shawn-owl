@@ -18,3 +18,14 @@
     list-style: none;
     padding: 0;
 }
+
+.Owl-app{
+    width: 30%;
+    max-height: 650px;
+    border: 1px solid black;
+    overflow: hidden;
+} 
+
+.ParticipantView {
+    overflow-y: scroll;
+} 
