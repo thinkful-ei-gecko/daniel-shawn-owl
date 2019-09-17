@@ -28,8 +28,8 @@
   margin: 0;
 }
 
-.Chats {
+.chatlist {
   list-style: none;
-  max-height: 650px;
+  min-height: 650px;
   overflow: hidden;
 }

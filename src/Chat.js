@@ -21,10 +21,12 @@ function Chat(props) {
   //we use the index as the key so React doesn't throw a warning
   //not best practice as an ID will always be unique, indexes are only unique until you rerender or reorder, then things can break.
   return( 
-    <div className="ParticipantList">
+    <div className="ChatWindow">
+      <ul className='chats'>
       {updatedChatEvents.map((chatEvent, i) => (
       <Message key={i} chatEvent={chatEvent}/>
   ))}
+  </ul>
   </div>)
 }
 

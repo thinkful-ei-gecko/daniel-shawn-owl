@@ -29,3 +29,21 @@
 .ParticipantView {
     overflow-y: scroll;
 } 
+
+.chats{
+    flex-direction: column;
+    list-style: none;
+    padding: 5px;
+}
+
+.chats span {
+    padding: 5px;
+}
+
+.chats li {
+    margin: 10px auto;
+}
+
+.ChatWindow {
+    display: none;
+}

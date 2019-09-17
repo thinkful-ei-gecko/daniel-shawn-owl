@@ -1,24 +1,19 @@
 import React from 'react';
 
-
 function Message(props) {
   console.log(props.chatEvent.type)
   if (props.chatEvent.type === 'message') {
     return (
-      <div className='participant'>
-       <ul className='Chats'>
-        <li><img src={props.chatEvent.avatar} alt={props.chatEvent.name}></img>
-          <p>{props.chatEvent.timestamp}</p>
-          <p>{props.chatEvent.participantName}</p>
+        <li><img className="Avatar" src={props.chatEvent.avatar} alt={props.chatEvent.name}></img>
+          <span>{props.chatEvent.participantName}</span>
+          <span>{props.chatEvent.displayHours}:{props.chatEvent.displayMinutes}</span>
           <p>{props.chatEvent.message}</p>
         </li>
-      </ul>
-      </div>
     )
   }
   else{
     return (
-      <p>{props.chatEvent.participantName} {props.chatEvent.type}</p>
+        <li>{props.chatEvent.participantName} {props.chatEvent.type}</li>
     );
   }
 }

@@ -7,18 +7,18 @@ import './Stage.css'
 function chatToggle(){
     let participants = document.getElementsByClassName("ParticipantView")
     console.log(participants)
-    let chat = document.getElementsByClassName("Chats")
+    let chat = document.getElementsByClassName("ChatWindow")
     console.log(chat)
     participants[0].style.display="none";
-    chat[0].style.display="block;"
+    chat[0].style.display="block";
 }
 
 function participantToggle() {
     let participants = document.getElementsByClassName("ParticipantView")
     console.log(participants)
-    let chat = document.getElementsByClassName("Chats")
+    let chat = document.getElementsByClassName("ChatWindow")
     participants[0].style.display="block";
-    chat[0].style.display="none;"
+    chat[0].style.display="none";
 }
 
 function App(props) {
@@ -34,7 +34,7 @@ function App(props) {
             <div className="ParticipantView">
                 <ParticipantsList Participants={props.Participants}></ParticipantsList>
             </div>
-                <div className="Chats">
+                <div className="chatlist">
                     <Chat ChatEvents={props.ChatEvents} Participants={props.Participants}></Chat>
                 </div>
         </div> 
