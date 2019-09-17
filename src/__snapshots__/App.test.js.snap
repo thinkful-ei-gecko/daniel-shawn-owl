@@ -1,0 +1,316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<main
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <h1>
+      OWL
+    </h1>
+  </header>
+  <div
+    className="Owl-app"
+  >
+    <button
+      className="chat-toggle"
+      onClick={[Function]}
+    >
+      Chat
+    </button>
+    <button
+      className="Participant-toggle"
+      onClick={[Function]}
+    >
+      Participants
+    </button>
+    <div
+      className="ParticipantView"
+    >
+      <div
+        className="ParticipantList"
+      >
+        <div
+          className="Participant"
+        >
+          <div>
+            <img
+              className="Avatar"
+              src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+            />
+          </div>
+          <ul
+            className="NameOnStageGroup"
+          >
+            <li
+              className="Name"
+            >
+              Koren Templeton
+            </li>
+            <li
+              className="OnStage"
+            >
+              <span>
+                on stage - 
+              </span>
+              <a
+                href="#"
+              >
+                Boot
+              </a>
+            </li>
+            <li>
+              Koren Templeton left
+            </li>
+          </ul>
+        </div>
+        <div
+          className="Participant"
+        >
+          <div>
+            <img
+              className="Avatar"
+              src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+            />
+          </div>
+          <ul
+            className="NameOnStageGroup"
+          >
+            <li
+              className="Name"
+            >
+              Caty Flucker
+            </li>
+            <li
+              className="OnStage"
+            >
+              <span>
+                on stage - 
+              </span>
+              <a
+                href="#"
+              >
+                Boot
+              </a>
+            </li>
+            <li>
+              Caty Flucker left
+            </li>
+          </ul>
+        </div>
+        <div
+          className="Participant"
+        >
+          <div>
+            <img
+              className="Avatar"
+              src="https://robohash.org/etexercitationemassumenda.jpg?size=200x200&set=set1"
+            />
+          </div>
+          <ul
+            className="NameOnStageGroup"
+          >
+            <li
+              className="Name"
+            >
+              Frank Runciman
+            </li>
+            <li
+              className="OnStage"
+            >
+              <span>
+                on stage - 
+              </span>
+              <a
+                href="#"
+              >
+                Boot
+              </a>
+            </li>
+            <li>
+              Frank Runciman left
+            </li>
+          </ul>
+        </div>
+        <div
+          className="Participant"
+        >
+          <div>
+            <img
+              className="Avatar"
+              src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+            />
+          </div>
+          <ul
+            className="NameOnStageGroup"
+          >
+            <li
+              className="Name"
+            >
+              Ashla Attwool
+            </li>
+            <li
+              className="OnStage"
+            >
+              <span>
+                on stage - 
+              </span>
+              <a
+                href="#"
+              >
+                Boot
+              </a>
+            </li>
+            <li>
+              Ashla Attwool left
+            </li>
+          </ul>
+        </div>
+        <div
+          className="Participant"
+        >
+          <div>
+            <img
+              className="Avatar"
+              src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+            />
+          </div>
+          <ul
+            className="NameOnStageGroup"
+          >
+            <li
+              className="Name"
+            >
+              Axe Kubicka
+            </li>
+            <li
+              className="OnStage"
+            >
+              <span>
+                on stage - 
+              </span>
+              <a
+                href="#"
+              >
+                Boot
+              </a>
+            </li>
+            <li>
+              Axe Kubicka left
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      className="chatlist"
+    >
+      <div
+        className="ChatWindow"
+      >
+        <ul
+          className="chats"
+        >
+          <li>
+            <img
+              className="Avatar"
+              src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+            />
+            <span>
+              Axe Kubicka
+            </span>
+            <span>
+              7
+              :
+              48
+            </span>
+            <p>
+              Hello world
+            </p>
+          </li>
+          <li>
+            Caty Flucker
+             
+            thumbs-up
+          </li>
+          <li>
+            Frank Runciman
+             
+            thumbs-down
+          </li>
+          <li>
+            Koren Templeton
+             
+            raise-hand
+          </li>
+          <li>
+            Koren Templeton
+             
+            clap
+          </li>
+          <li>
+            Koren Templeton
+             
+            join
+          </li>
+          <li>
+            Ashla Attwool
+             
+            leave
+          </li>
+          <li>
+            Axe Kubicka
+             
+            join-stage
+          </li>
+          <li>
+            Axe Kubicka
+             
+            leave-stage
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    className="stage"
+  >
+    <div
+      className="onStage"
+    >
+      <div
+        className="stageIcon"
+      >
+        <img
+          alt="Koren Templeton"
+          src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+        />
+        <div
+          className="StageName"
+        >
+          <p>
+            Koren Templeton
+          </p>
+        </div>
+      </div>
+      <div
+        className="stageIcon"
+      >
+        <img
+          alt="Ashla Attwool"
+          src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+        />
+        <div
+          className="StageName"
+        >
+          <p>
+            Ashla Attwool
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`;

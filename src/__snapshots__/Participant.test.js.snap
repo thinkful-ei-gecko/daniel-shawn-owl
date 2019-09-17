@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="Participant"
+>
+  <div>
+    <img
+      className="Avatar"
+    />
+  </div>
+  <ul
+    className="NameOnStageGroup"
+  >
+    <li
+      className="Name"
+    />
+    <li
+      className="OnStage"
+    >
+      <span>
+        on stage - 
+      </span>
+      <a
+        href="#"
+      >
+        Boot
+      </a>
+    </li>
+    <li />
+  </ul>
+</div>
+`;

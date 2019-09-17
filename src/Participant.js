@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import './Participant.css';
 
 
@@ -10,7 +10,7 @@ function Participant(props) {
             <li className="Name">{props.name}</li>
             <li className="OnStage">
                 <span>on stage - </span> 
-                <a href="">Boot</a> 
+                <a href="#">Boot</a> 
             </li>
             <li>{props.inSession}</li> 
         </ul>
